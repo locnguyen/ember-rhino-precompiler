@@ -3,7 +3,14 @@ importPackage(java.io);
 /**
  * This script can be called from the shell if Rhino is on the classpath.
  *
- * java -jar rhino-1.7RV.jar org.mozilla.javascript.tools.shell.Main ember-rhino-precompiler.js 
+ * java -jar rhino-1.7R.jar org.mozilla.javascript.tools.shell.Main ember-rhino-precompiler.js --templatesDir /path/to/templates --outputFile /path/to/compiledfile.js
+ *
+ * Two additional arguments are required for this script to execute
+ *    --templatesDir, this specifies where your Handlebars templates are located
+ *    --outputFile, this specifies what file the generated code should be written to.
+ *
+ * The URIs to the JavaScript dependencies can be overridden from the shell as well. See the options object
+ * to see what other variables you can override.
  */
 (function(args) {
 

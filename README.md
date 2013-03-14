@@ -3,6 +3,9 @@ ember-rhino-precompiler
 
 In Java based environments where adding non-Java dependencies is not possible, developers can use this script to precompile Handlebar templates for Ember.js applications.
 
+The inspiration for this script came from Yehuda Katz's reply to this
+StackOverflow question: http://stackoverflow.com/questions/12054452/ember-js-helpers-and-handlebars-js-runtime-only-build/12336249#12336249
+
 Dependencies
 =======
 * env.js v1.2
